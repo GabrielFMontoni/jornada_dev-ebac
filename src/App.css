@@ -2,7 +2,7 @@ html{
   scroll-snap-type: y mandatory;
 }
 .App{
-  background-color: #000;
+  background-color: #000000;
   height: 100vh;
   color: #fff;
   display: grid;
@@ -10,11 +10,11 @@ html{
 }
 
 .app__videos{
-  height: 95vh;
+  height: 90vh;
   max-height: 800px;
   width: 100%;
   max-width: 450px;
-  border: 1px solid #000;
+  border: 3px solid #1ba0c2;
   border-radius: 20px;
   overflow: scroll;
   scroll-snap-type: y mandatory;
