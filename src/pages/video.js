@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./video.css";
 import VideoFooter from "./components/footer/VideoFooter";
+import VideoSidebar from "./components/sidebar/VideoSidebar";
 
-function Video() {
+function Video({curtidas,mensagens,compartilhamentos, nome, descricao, hashtags, musica,url}) {
   const videoRef = useRef(null);
   const [play, setPlay] = useState(false);
 
@@ -23,11 +24,20 @@ function Video() {
         ref={videoRef}
         onClick={darPlayVideo}
         loop
-        src="https://firebasestorage.googleapis.com/v0/b/video-2db61.appspot.com/o/X2Download.app-Que%20Bonito%20Gatito%20%23Shorts%20%23top-(720p60).mp4?alt=media&token=538b050d-b480-4995-a3a8-2ba5dcecc808"
+        src={url}
       ></video>
 
-      {/* Side bar */}
-      <VideoFooter />
+      <VideoSidebar 
+        curtidas={curtidas}
+        mensagens={mensagens}
+        compartilhamentos={compartilhamentos}
+      />
+      <VideoFooter 
+      nome = {nome}
+      descricao={descricao}
+      hashtags={hashtags}
+      musica={musica}
+      />
     </div>
   );
 }
