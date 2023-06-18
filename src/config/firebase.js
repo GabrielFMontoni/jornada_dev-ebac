@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore/lite";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBt63vViAYL3GwDaUGx5PZybMKRv0fg1Kc",
-    authDomain: "tiktokclone-gabrielmontoni.firebaseapp.com",
-    projectId: "tiktokclone-gabrielmontoni",
-    storageBucket: "tiktokclone-gabrielmontoni.appspot.com",
-    messagingSenderId: "698118198137",
-    appId: "1:698118198137:web:6d22662b97cd4d1dee15a8"
+    apiKey: "AIzaSyCUkKrC99i1abLr08CyyMJucCTSiM90BV0",
+    authDomain: "tiktokclone-gabrielmonto-6bf55.firebaseapp.com",
+    projectId: "tiktokclone-gabrielmonto-6bf55",
+    storageBucket: "tiktokclone-gabrielmonto-6bf55.appspot.com",
+    messagingSenderId: "350637715362",
+    appId: "1:350637715362:web:cc416248499a4ff3dd4cfb"
   };
 
 // Initialize Firebase
