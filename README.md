@@ -12,7 +12,7 @@
 Tik Tok Clone, vídeos, espécie de Feed e botões.
 
 ## :file_folder: Acesso ao projeto
-
+https://tiktokjornada-c4d35.web.app/
 
 ## :hammer_and_wrench: Abrir e rodar o projeto
 Baixe e execute em sua máquina o "index.html" ou acesse no terminal do VSCode e digite npm start.
