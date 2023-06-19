@@ -3,9 +3,21 @@ import "./video.css";
 import VideoFooter from "./components/footer/VideoFooter";
 import VideoSidebar from "./components/sidebar/VideoSidebar";
 
-function Video({curtidas,mensagens,compartilhamentos, nome, descricao, hashtags, musica,url}) {
+function Video({
+  // curtidas,mensagens,compartilhamentos, nome, descricao, hashtags, musica,url
+  likes,messages,shares,name,description,music,url, hashtags
+}) {
   const videoRef = useRef(null);
   const [play, setPlay] = useState(false);
+
+  // let scrollando = document.getElementById("videos");
+  
+  // scrollando.addEventListener("scroll", scrollar());
+  // console.log(scrollando)
+  
+  // function scrollar(){
+  //   videoRef.current.pause();
+  // }
 
   function darPlayVideo() {
     if (!play) {
@@ -18,7 +30,7 @@ function Video({curtidas,mensagens,compartilhamentos, nome, descricao, hashtags,
   }
 
   return (
-    <div className="video">
+    <div className="video" id="videos">
       <video
         className="video__player"
         ref={videoRef}
@@ -28,15 +40,21 @@ function Video({curtidas,mensagens,compartilhamentos, nome, descricao, hashtags,
       ></video>
 
       <VideoSidebar 
-        curtidas={curtidas}
-        mensagens={mensagens}
-        compartilhamentos={compartilhamentos}
+        // curtidas={curtidas}
+        // mensagens={mensagens}
+        // compartilhamentos={compartilhamentos}
+        likes = {likes}
+        messages = {messages}
+        shares = {shares}
       />
       <VideoFooter 
-      nome = {nome}
-      descricao={descricao}
+      // nome = {nome}
+      // descricao={descricao}
       hashtags={hashtags}
-      musica={musica}
+      // musica={musica}
+      description = {description}
+      music = {music}
+      name = {name}
       />
     </div>
   );

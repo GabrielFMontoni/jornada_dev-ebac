@@ -5,7 +5,10 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ChatIcon from "@mui/icons-material/Chat";
 import ShareIcon from "@mui/icons-material/Share";
 
-function VideoSidebar({curtidas,mensagens,compartilhamentos}) {
+function VideoSidebar({
+  // curtidas,mensagens,compartilhamentos
+  likes,messages,shares
+}) {
   const [curtido, setCurtido] = useState(false);
 
   function curtir() {
@@ -25,21 +28,21 @@ function VideoSidebar({curtidas,mensagens,compartilhamentos}) {
         )}
 
         <p>
-          <strong>{curtido ? curtidas + 1 : curtidas}</strong>
+          <strong>{curtido ? likes + 1 : likes}</strong>
         </p>
       </div>
 
       <div className="videoSidebar__opcao">
         <ChatIcon fontSize="large" />
         <p>
-          <strong>{mensagens}</strong>
+          <strong>{messages}</strong>
         </p>
       </div>
 
       <div className="videoSidebar__opcao">
         <ShareIcon fontSize="large" />
         <p>
-          <strong>{compartilhamentos}</strong>
+          <strong>{shares}</strong>
         </p>
       </div>
     </div>
